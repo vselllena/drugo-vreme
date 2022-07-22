@@ -1,10 +1,11 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Jost;
     font-size: 16px;
     line-height: 1.5;
     color: white;
     background-color: black;
     padding-top: 104px;
+
 }
 a {
     color: white;
@@ -24,7 +25,8 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    z-index: 2;
+    z-index: 4;
+    /* font-size: 32px; */
 }
 
 
@@ -86,8 +88,17 @@ header nav a.selected {
     transition: filter 0.3s;
 }
 
-.photo:hover img {
+.inverted{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.photo:hover .normal {
     filter: grayscale(100%);
+}
+
+.inverted:hover {
+    filter: grayscale(0%) !important;
 }
 
 .overlay {
@@ -109,6 +120,8 @@ header nav a.selected {
     opacity: 1;
     
 }
+
+
 
 .photo h2 {
     position: absolute;
@@ -132,7 +145,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    float: right;
+    border-top: 1px solid gray;
+    margin-top: 20px;
+    bottom: 0;
+    
 }
 
 footer nav {
@@ -157,14 +173,14 @@ footer nav a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 500px;
+    max-width: 450px;
     pointer-events: none;
 
     transition: opacity 0.3s;
 }
 
 .list {
-    max-width: 640px;
+    max-width: 850px;
     margin-left: auto;
     margin-right: auto;
     font-size: 48px;
@@ -172,12 +188,16 @@ footer nav a {
     margin-top: 120px;
 }
 
+.box{
+  height: 100px;
+  width: 10px;
+}
 .list a::after {
     content: '/';
 }
 
 .list a:last-child::after {
-    content: '';
+    content: ''
 }
 
 .list a:hover img {
@@ -189,7 +209,7 @@ footer nav a {
     position: fixed;
     top: 8px;
     left: 0px;
-    z-index: 1;
+    z-index: 3;
     overflow: hidden;
     width: 100%;
     font-size: 16px;
@@ -212,3 +232,27 @@ h2 span {
 
 
 
+@media only screen and (max-width: 600px) {
+    .box{
+        display: none;
+    }
+    .list a img {
+        opacity: 1;
+        position: static;
+        max-width: auto;
+        pointer-events: none;
+        transform: translate(0%,0%);
+        width: 100%;
+        padding: 10px;
+    }
+    .list a span{
+        z-index: 2;
+    }
+    .list a{
+        margin-top: 25px;
+        padding: 10px;
+    }
+    .list a::after{
+        content: " ";
+    }
+}
