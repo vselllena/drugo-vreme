@@ -12,6 +12,8 @@ a {
     text-decoration: none;
 }
 
+
+
 header {
     overflow: hidden;
     position: fixed;
@@ -29,6 +31,9 @@ header {
     /* font-size: 32px; */
 }
 
+.photos h2 {
+    font-size: 24px;
+}
 
 header h1 {
    float: left;
@@ -145,7 +150,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid gray;
+    /* border-top: 1px solid gray; */
     margin-top: 20px;
     bottom: 0;
     
@@ -189,8 +194,10 @@ footer nav a {
 }
 
 .box{
-  height: 100px;
-  width: 10px;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: -2%;
 }
 .list a::after {
     content: '/';
@@ -232,6 +239,8 @@ h2 span {
 
 
 
+
+
 @media only screen and (max-width: 600px) {
     .box{
         display: none;
@@ -255,4 +264,10 @@ h2 span {
     .list a::after{
         content: " ";
     }
+}
+
+.white{
+    margin-top: 100px;
+    background-color: white;
+    color: black;
 }
