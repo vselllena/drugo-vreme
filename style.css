@@ -1,3 +1,42 @@
+
+
+@font-face {
+    font-family: "Mazius Review";
+    src: url(maziusreview-regular.woff2);
+}
+
+
+@font-face {
+    font-family: "Mazius Review";
+    font-style: italic;
+    src: url(maziusreview-regular.woff2);
+}
+
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translate(0, 24px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+
+}
+
+@keyframes hyphen {
+    0% {
+        width: 0.5em;
+    }
+
+    100% {
+        width: 1em;
+    }
+}
+
+
 body {
     font-family: Jost;
     font-size: 16px;
@@ -5,7 +44,8 @@ body {
     color: white;
     background-color: black;
     padding-top: 104px;
-
+    
+ 
 }
 a {
     color: white;
@@ -13,6 +53,31 @@ a {
 }
 
 
+h3 {
+font-size: 10vw;
+font-style: italic;
+text-align: center;
+font-family: Mazius Review;
+
+animation: fadein 0.4s 1s both cubic-bezier(0.9,0.03,0.69,0.22);
+
+
+}
+
+p {
+    font-size: 36px;
+    text-align: center;
+    animation: fadein 0.4s 2s both cubic-bezier(0.9,0.03,0.69,0.22);
+}
+
+.line {
+    background-color: white;
+    width: 1em;
+    height: 0.02em;
+    display: inline-block;
+    vertical-align: middle;
+    animation: hyphen 2s 1s infinite alternate cubic-bezier(0.86,0,0.07,1);
+}
 
 header {
     overflow: hidden;
@@ -22,14 +87,19 @@ header {
 
     width: 100%;
     padding: 20px;
+    /* height: 100vh; */
 
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
 
     z-index: 4;
     /* font-size: 32px; */
+
+    /* animation: fadein 0.4s 1s both; */
 }
+
+
 
 .photos h2 {
     font-size: 24px;
@@ -47,7 +117,8 @@ header h1 {
 
 header nav {
     float: right; 
-    margin-top: 0;
+    margin-top: 240px;
+
 }
 
 
@@ -150,7 +221,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border-top: 1px solid gray; */
+    border-top: 1px solid gray;
     margin-top: 20px;
     bottom: 0;
     
@@ -196,7 +267,7 @@ footer nav a {
 .box{
     height: 100px;
     width: 100%;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     margin-bottom: -2%;
 }
 .list a::after {
@@ -266,8 +337,10 @@ h2 span {
     }
 }
 
-.white{
-    margin-top: 100px;
-    background-color: white;
-    color: black;
+.black{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    background-color: black;
+    color: white;
 }
+
