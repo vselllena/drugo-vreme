@@ -57,9 +57,7 @@ const fadeArrow = function () {
 
 
 window.addEventListener("scroll", function () {
-    // fadeHeader()
     fadeArrow();
-    // checkBlobs()
   })
   
   
