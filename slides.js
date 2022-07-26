@@ -1,4 +1,9 @@
 const slides = document.querySelectorAll("section div.slides");
+const arrowTag =  document.querySelector("img.arrow")
+
+const easing = function (x) {
+    return x * x * x
+  }
 
 slides.forEach(slide => {
 
@@ -43,3 +48,19 @@ slides.forEach(slide => {
 
 })
 
+
+const fadeArrow = function () {
+    const pixels = window.pageYOffset
+    
+    arrowTag.style.opacity = 1 - easing(pixels / 100)
+  }
+
+
+window.addEventListener("scroll", function () {
+    // fadeHeader()
+    fadeArrow();
+    // checkBlobs()
+  })
+  
+  
+  

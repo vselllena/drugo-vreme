@@ -344,3 +344,10 @@ h2 span {
     color: white;
 }
 
+img.arrow {
+    position: fixed;
+    bottom: 32px;
+    left: 44%;
+    transform: translate(-50%, 0);
+
+}
