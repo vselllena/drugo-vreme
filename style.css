@@ -309,20 +309,24 @@ footer nav a {
     width: 100%;
     font-size: 16px;
     font-variation-settings: "wgth" 800;
+    /* overflow-x: visible; */
 }
 
 .header1 h1, .header1 h2 {
     display: flex;
+    overflow-x: visible;
 }
 
 h1 span, h2 span{
     width: 150px;
     flex: 0 0 auto;
     display: inline-block;
+    /* overflow-x: visible; */
 }
 
 h2 span {
     width: 250px;
+    /* overflow-x: visible; */
 }
 
 
