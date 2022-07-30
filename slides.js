@@ -50,15 +50,25 @@ slides.forEach(slide => {
 
 
 const fadeArrow = function () {
+   
+
     const pixels = window.pageYOffset
     
     arrowTag.style.opacity = 1 - easing(pixels / 100)
   }
 
+  window.onload = function() {
+    const fadeInTimeline = gsap.timeline();
+
+    fadeInTimeline
+        .set(arrowTag, { opacity: 0 })
+        .to(arrowTag, { opacity: 1, delay: 1, duration: 1 });
+  };
+  
 
 window.addEventListener("scroll", function () {
     fadeArrow();
   })
   
-  
+
   
