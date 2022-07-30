@@ -407,5 +407,8 @@ h2 span {
 .normal{
     filter: grayscale(100%)
 }
+img.arrow {
+    max-width: 16px;
+}
 }
 
