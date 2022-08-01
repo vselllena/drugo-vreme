@@ -124,7 +124,7 @@ header h1 {
 header nav {
     overflow: hidden;
     float: right;
-    margin-top: 40%;
+    margin-top: 40vh;
     position:fixed;
     -webkit-transform-origin: left top;
     -webkit-transform:rotate(-90deg) translateX(-100%);
