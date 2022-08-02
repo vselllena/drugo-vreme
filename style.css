@@ -346,6 +346,7 @@ h2 span {
 }
 
 img.arrow {
+    opacity: 0;
     position: fixed;
     bottom: 32px;
     left: 44%;
