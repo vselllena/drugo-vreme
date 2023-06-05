@@ -1,379 +1,352 @@
-
-
 @font-face {
-    font-family: "Mazius Review";
-    src: url(maziusreview-regular.woff2);
+  font-family: "Mazius Review";
+  src: url(maziusreview-regular.woff2);
 }
 
-
 @font-face {
-    font-family: "Mazius Review";
-    font-style: italic;
-    src: url(maziusreview-regular.woff2);
+  font-family: "Mazius Review";
+  font-style: italic;
+  src: url(maziusreview-regular.woff2);
 }
-
 
 @keyframes fadein {
-    0% {
-        opacity: 0;
-        transform: translate(0, 24px)
-    }
+  0% {
+    opacity: 0;
+    transform: translate(0, 24px);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translate(0, 0);
-    }
-
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
 
 @keyframes hyphen {
-    0% {
-        width: 0.5em;
-    }
+  0% {
+    width: 0.5em;
+  }
 
-    100% {
-        width: 1em;
-    }
+  100% {
+    width: 1em;
+  }
 }
 
 * {
-      overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body {
-  
-    font-family: Clash Display;
-    font-size: 24px;
-    line-height: 1.5;
-    color: white;
-    background-color: black;
-    padding-top: 104px;
-    
- 
+  font-family: Clash Display;
+  font-size: 24px;
+  line-height: 1.5;
+  color: white;
+  background-color: black;
+  padding-top: 104px;
 }
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-
 h3 {
-font-size: 10vw;
-font-style: italic;
-text-align: center;
-font-family: Mazius Review;
+  font-size: 10vw;
+  font-style: italic;
+  text-align: center;
+  font-family: Mazius Review;
 
-
-animation: fadein 0.4s 1s both cubic-bezier(0.9,0.03,0.69,0.22);
-
-
+  animation: fadein 0.4s 1s both cubic-bezier(0.9, 0.03, 0.69, 0.22);
 }
 
 p {
-    font-size: 36px;
-    text-align: center;
-    animation: fadein 0.4s 2s both cubic-bezier(0.9,0.03,0.69,0.22);
+  font-size: 36px;
+  text-align: center;
+  animation: fadein 0.4s 2s both cubic-bezier(0.9, 0.03, 0.69, 0.22);
 }
 
 .line {
-    background-color: white;
-    width: 1em;
-    height: 0.02em;
-    display: inline-block;
-    vertical-align: middle;
-    animation: hyphen 2s 1s infinite alternate cubic-bezier(0.86,0,0.07,1);
+  background-color: white;
+  width: 1em;
+  height: 0.02em;
+  display: inline-block;
+  vertical-align: middle;
+  animation: hyphen 2s 1s infinite alternate cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 header {
-    overflow: hidden;
-    position: fixed;
-    top: 60px;
-    left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 60px;
+  left: 0;
 
-    width: 100%;
-    padding: 20px;
-    
+  width: 100%;
+  padding: 20px;
 
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    z-index: 4;
+  z-index: 4;
 }
 
-
-
 .photos h2 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 header h1 {
-   float: left;
-
+  float: left;
 }
 
 header,
 header h1 {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 header nav {
-    overflow: hidden;
-    float: right;
-    margin-top: 40vh;
-    position:fixed;
-    -webkit-transform-origin: left top;
-    -webkit-transform:rotate(-90deg) translateX(-100%);
-
+  overflow: hidden;
+  float: right;
+  margin-top: 40vh;
+  position: fixed;
+  -webkit-transform-origin: left top;
+  -webkit-transform: rotate(-90deg) translateX(-100%);
 }
 
-.first-section{
-    width: 100vw;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.first-section {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header nav a {
-    margin-left: 10px;
-    transition: border 0.3s ease-in;
-    border-bottom: solid 2px rgba(0, 0, 0, 0);
-    padding-bottom: 3px;
-    ;
+  margin-left: 10px;
+  transition: border 0.3s ease-in;
+  border-bottom: solid 2px rgba(0, 0, 0, 0);
+  padding-bottom: 3px;
 }
 
 header nav a:hover {
-    border-color: #555;
-    
+  border-color: #555;
 }
 
 header nav a.selected {
-    border-color: white;
-    
+  border-color: white;
 }
 
 .photos {
-    max-width: 1080px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: center;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .photo {
-    width: 300px;
-    margin: 10px;
-    vertical-align: top;
-    position: relative;
+  width: 300px;
+  margin: 10px;
+  vertical-align: top;
+  position: relative;
 }
 
 .photo .large {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .photo img {
-    transition: filter 0.3s;
+  transition: filter 0.3s;
 }
 
-.inverted{
-    -webkit-filter: grayscale(100%); 
+.inverted {
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
 .photo:hover .normal {
-    filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .inverted:hover {
-    filter: grayscale(0%) !important;
+  filter: grayscale(0%) !important;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
 
-    opacity: 0;
+  opacity: 0;
 
-    transition: opacity 0.3s;
-    z-index: 2;
+  transition: opacity 0.3s;
+  z-index: 2;
 }
 
 .photo:hover .overlay {
-    opacity: 1;
-    
+  opacity: 1;
 }
-
-
 
 .photo h2 {
-    position: absolute;
-    font-size: 32px;
-    line-height: 1.2;
+  position: absolute;
+  font-size: 32px;
+  line-height: 1.2;
 }
 
-
 .small {
-width: 150px;
+  width: 150px;
 }
 
 .large {
-    width: 400px;
+  width: 400px;
 }
 
 footer {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid gray;
-    margin-top: 20px;
-    bottom: 0;
-    
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid gray;
+  margin-top: 20px;
+  bottom: 0;
 }
 
 footer nav {
-    padding-right: 5px;
-    }
-
-footer nav a {
-    margin-right: 10px;
+  padding-right: 5px;
 }
 
+footer nav a {
+  margin-right: 10px;
+}
 
 .list a img {
-    opacity: 0;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 450px;
-    pointer-events: none;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 450px;
+  pointer-events: none;
 
-    transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .list {
-    max-width: 850px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 48px;
-    line-height: 1.2;
-    margin-top: 120px;
-    overflow-y: hidden;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-top: 120px;
+  overflow-y: hidden;
 }
 
-.box{
-    height: 100px;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    margin-bottom: -2%;
+.box {
+  height: 100px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  margin-bottom: -2%;
 }
 .list a::after {
-    content: '/';
+  content: "/";
 }
 
 .list a:last-child::after {
-    content: ''
+  content: "";
 }
 
 .list a:hover img {
-    opacity: 1;
+  opacity: 1;
 }
 
-
-.header1{
-    position: fixed;
-    top: 8px;
-    left: 0px;
-    z-index: 3;
-    overflow: hidden;
-    width: 100%;
-    font-size: 16px;
-    font-variation-settings: "wgth" 800;
-    /* overflow-x: visible; */
+.header1 {
+  position: fixed;
+  top: 8px;
+  left: 0px;
+  z-index: 3;
+  overflow: hidden;
+  width: 100%;
+  font-size: 16px;
+  font-variation-settings: "wgth" 800;
+  /* overflow-x: visible; */
 }
 
-.header1 h1, .header1 h2 {
-    display: flex;
-    overflow-x: visible;
+.header1 h1,
+.header1 h2 {
+  display: flex;
+  overflow-x: visible;
 }
 
-h1 span, h2 span{
-    width: 150px;
-    flex: 0 0 auto;
-    display: inline-block;
+h1 span,
+h2 span {
+  width: 150px;
+  flex: 0 0 auto;
+  display: inline-block;
 }
 
 h2 span {
-    width: 250px;
+  width: 250px;
 }
 
-
-
-
-.black{
-    background-color: black;
-    color: white;
+.black {
+  background-color: black;
+  color: white;
 }
 
 img.arrow {
-    opacity: 0;
-    position: fixed;
-    bottom: 32px;
-    left: 44%;
-    transform: translate(-50%, 0);
+  opacity: 0;
+  position: fixed;
+  bottom: 32px;
+  left: 44%;
+  transform: translate(-50%, 0);
 }
 
 @media only screen and (max-width: 600px) {
-    .box{
-        display: none;
-    }
-    .list a img {
-        opacity: 1;
-        position: static;
-        max-width: auto;
-        pointer-events: none;
-        transform: translate(0%,0%);
-        width: 100%;
-        padding: 10px;
-    }
-    .list a span{
-        z-index: 2;
-    }
-    .list a{
-        margin-top: 25px;
-        padding: 10px;
-    }
-    .list a::after{
-        content: " ";
-    }
+  .box {
+    display: none;
+  }
+  .list a img {
+    opacity: 1;
+    position: static;
+    max-width: auto;
+    pointer-events: none;
+    transform: translate(0%, 0%);
+    width: 100%;
+    padding: 10px;
+  }
+  .list a span {
+    z-index: 2;
+  }
+  .list a {
+    margin-top: 25px;
+    padding: 10px;
+  }
+  .list a::after {
+    content: " ";
+  }
 
-    header nav {
-        overflow: hidden;
-        position: fixed;
-        padding: 20px;
-        -webkit-transform:rotate(0deg) translateX(0%);
-        margin-top: 20%;
-}
+  header nav {
+    overflow: hidden;
+    position: fixed;
+    padding: 20px;
+    -webkit-transform: rotate(0deg) translateX(0%);
+    margin-top: 20%;
+  }
 
-h1 span, h2 span{
+  h1 span,
+  h2 span {
     width: 105px;
-}
+  }
 
-h2 span {
+  h2 span {
     width: 175px;
-}
-.overlay {
+  }
+  .overlay {
     position: static;
     top: 0;
     left: 0;
@@ -384,18 +357,17 @@ h2 span {
 
     opacity: 1;
     z-index: 3;
-}
-.overlay h2{
+  }
+  .overlay h2 {
     z-index: 5;
-}
-.photos{
-    margin-top:75px;
-}
-.normal{
-    filter: grayscale(100%)
-}
-img.arrow {
+  }
+  .photos {
+    margin-top: 75px;
+  }
+  .normal {
+    filter: grayscale(100%);
+  }
+  img.arrow {
     max-width: 16px;
+  }
 }
-}
-
