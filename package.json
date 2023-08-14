@@ -1,11 +1,11 @@
 {
-  "name": "CircularTextEffect",
+  "name": "Portfolio",
   "version": "1.0.0",
   "description": "*How to use this template:*",
   "main": "src/js/index.js",
   "scripts": {
     "start": "parcel src/index.html --open",
-    "clean": "rm -rf dist/*",
+    "clean": "rm -rf docs/*",
     "build:parcel": "parcel build src/index.html --no-content-hash --no-minify --no-source-maps --public-url ./",
     "build": "npm run clean && npm run build:parcel"
   },
