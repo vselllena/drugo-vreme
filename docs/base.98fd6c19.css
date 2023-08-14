@@ -114,7 +114,9 @@ a:focus-visible {
 }
 
 .frame {
-	padding: 3rem 5vw;
+	padding-top: 2rem ;
+	padding-left: 3rem ;
+	padding-right: 3rem ;
 	text-align: center;
 	position: relative;
 	font-weight: 500;
